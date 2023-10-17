@@ -29,7 +29,7 @@ z=st.number_input("Enter the readings of the  Infrared filter", min_value=0.0, m
 redshift=st.number_input("Enter the readings of the  Redshift", max_value=9999.0, value=1.424659, step=0.001)
 listt=[u,g,r,i,z,redshift]
 vk= np.array(listt).reshape(1, 6)
-model=pickle.load(open(r"C:\Users\Veer Kukreja\Downloads\stellar_classifier.sav", "rb"))
+model=pickle.load(open("stellar_classifier.sav", "rb"))
 def predict(v):
     if v==0:
         return "Galaxy"
