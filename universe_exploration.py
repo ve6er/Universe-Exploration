@@ -11,7 +11,7 @@ st.markdown("<h1 style='text-align: center; font-family: Roboto;'>Explore the Un
 
 st.image(Image.open("luminosity.jpg"))
 
-cities=pd.read_csv(r"C:\Users\Veer Kukreja\Downloads\cities_coords.csv")
+cities=pd.read_csv("cities_coords.csv")
 
 st.write('Select your city from the list below:')
 search_query = st.text_input('Search for a city:', 'Mumbai')
