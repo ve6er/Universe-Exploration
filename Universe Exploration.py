@@ -9,7 +9,7 @@ import webbrowser
 
 st.markdown("<h1 style='text-align: center; font-family: Roboto;'>Explore the Universe</h1>", unsafe_allow_html=True)
 
-st.image(Image.open(r"C:\Users\Veer Kukreja\Downloads\ryan-hutton-Jztmx9yqjBw-unsplash.jpg"))
+st.image(Image.open("luminosity.jpg"))
 
 cities=pd.read_csv(r"C:\Users\Veer Kukreja\Downloads\cities_coords.csv")
 
@@ -42,7 +42,6 @@ galaxy = Image.open("Galaxy.jpg")
 qso=Image.open("QSO.jpg")
 star=Image.open("star.jpg")
 telescope=Image.open("Title.jpg")
-lumin=Image.open("luminosity.jpg")
 
 st.write("<div style='margin-bottom: 55px;'></div>", unsafe_allow_html=True)
 if object=="Galaxy":
