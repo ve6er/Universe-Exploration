@@ -139,7 +139,7 @@ vel=calculate_velocity_from_redshift(redshift)
 if vel>0:
     st.markdown(f"<h1 style='text-align: center; color: white; font-size: 20px;'>The {object} is moving away from us at a speed of {vel:.2f} m/s !!</h1>", unsafe_allow_html=True)
     if v_parker_probe<vel:
-        st.markdown(f"<h1 style='text-align: center; color: white; font-size: 20px;'>That's {round(vel)} times faster than the fastest human made space ship !!</h1>", unsafe_allow_html=True)
+        st.markdown(f"<h1 style='text-align: center; color: white; font-size: 20px;'>That's {round(vel/68600.0762)} times faster than the fastest human made space ship !!</h1>", unsafe_allow_html=True)
 else:
     st.markdown(f"<h1 style='text-align: center; color: white; font-size: 20px;'>The {object} is heading towards us at a speed of {-vel:.2f} m/s !!</h1>", unsafe_allow_html=True)
     if v_parker_probe<(-vel):
