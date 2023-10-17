@@ -147,6 +147,4 @@ else:
 if abs(vel)>299792458:
     st.markdown(f"<h1 style='text-align: center; color: white; font-size: 20px;'>That's faster than the speed of light!!</h1>", unsafe_allow_html=True)
     st.markdown(f"<h1 style='text-align: left; color: white; font-size: 20px;'>Want to know how something can be moving away from us faster than the fastest thing in the Universe?</h1>", unsafe_allow_html=True)
-    url = 'https://phys.org/news/2015-10-galaxies-faster.html'
-    if st.button('Click Here', "primary"):
-        webbrowser.open_new_tab(url)
+    st.write("[Click here to find out](https://phys.org/news/2015-10-galaxies-faster.html)")
