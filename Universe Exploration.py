@@ -38,11 +38,11 @@ def predict(v):
     else:
         return "Star"
 object=predict(model.predict(vk))
-galaxy = Image.open(r"C:\Users\Veer Kukreja\OneDrive\Desktop\Galaxy.jpg")
-qso=Image.open(r"C:\Users\Veer Kukreja\OneDrive\Desktop\QSO.jpg")
-star=Image.open(r"C:\Users\Veer Kukreja\OneDrive\Desktop\star.jpg")
-telescope=Image.open(r"C:\Users\Veer Kukreja\Downloads\telescope.jpg")
-lumin=Image.open(r"C:\Users\Veer Kukreja\OneDrive\Desktop\tWgz6P7KH621YshqHU1eJdKuASAAafLH1663687955.jpg")
+galaxy = Image.open("Galaxy.jpg")
+qso=Image.open("QSO.jpg")
+star=Image.open("star.jpg")
+telescope=Image.open("Title.jpg")
+lumin=Image.open("luminosity.jpg")
 
 st.write("<div style='margin-bottom: 55px;'></div>", unsafe_allow_html=True)
 if object=="Galaxy":
